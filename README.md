@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skills-D97757)](https://docs.anthropic.com/en/docs/claude-code)
 [![Agent Skills](https://img.shields.io/badge/format-SKILL.md-blue)](https://docs.anthropic.com/en/docs/claude-code/skills)
-[![Skills](https://img.shields.io/badge/free%20skills-4-informational)](skills)
+[![Skills](https://img.shields.io/badge/free%20skills-5-informational)](skills)
 [![GitHub stars](https://img.shields.io/github/stars/CalebAnderson-Coder/ai-agency-os-starter?style=social)](https://github.com/CalebAnderson-Coder/ai-agency-os-starter/stargazers)
 
 <p align="center"><img src="assets/demo.gif" alt="AI Agency OS demo: per-client workspace and scope-guard" width="800"></p>
@@ -35,8 +35,21 @@ Using **Codex** or another agent that reads `SKILL.md`? Copy the folders under `
 | [`scope-guard`](skills/clients/scope-guard/SKILL.md) | Checks requests against `SCOPE.md`, quotes extras, drafts the reply, logs `CHANGES.md` |
 | [`offer-builder`](skills/sales/offer-builder/SKILL.md) | Productized offer + pricing ladder |
 | [`cold-email-agency`](skills/sales/cold-email-agency/SKILL.md) | 4-step cold email sequences for US SMB owners |
+| [`quick-quote`](skills/sales/quick-quote/SKILL.md) | **New:** value-based price from 6 numbers, math shown, underquote check |
 
 Plus [`templates/clients/_template/`](templates/clients/_template) (CLAUDE.md, BRIEF, SCOPE, CHANGES, LOG, brand voice & claims) and a worked example in [`examples/acme-plumbing/`](examples/acme-plumbing).
+
+## New: `quick-quote` — stop underquoting
+"What do I charge?" comes up constantly in AI agency communities, and most of us answer by quoting our hours. `quick-quote` prices the value of the workflow to the client instead, floored by your delivery cost:
+
+```
+I'm about to quote a law firm $2,000 for intake automation. Run quick-quote.
+```
+Fictional example from the skill: 15 h/week of paralegal time at $40/h + ~2.4 matters/month lost at $5,000 (50% margin) → $100,800/year cost of doing nothing → conservative $50,400 → **$10,250 value-based price**, cost floor $6,750, verdict **RE-QUOTE**.
+
+For context, Morningside's September 2026 AI Agency Report (800+ agency owners, self-reported) puts the average disclosed project at $10,800, range $3k–$20k.
+
+**Need the full workflow?** The **[AI Agency Pricing Kit](https://brianspark283.gumroad.com/l/ai-agency-pricing-kit?utm_source=github&utm_medium=readme)** ($39) adds a guided workflow interview, a value calculator with 6 warning flags, a 3-option proposal (paid diagnostic / build / retainer) with talk track, a `paid-diagnostic` skill that writes the $1.5k–3k diagnostic report, a `retainer-builder` skill with bot-to-human handoff rules and a monthly ROI report, plus 3 worked examples. 30-day money-back guarantee.
 
 ## Full skill walkthrough: `scope-guard`
 `examples/acme-plumbing/SCOPE.md` (fictional client): 4 Meta ad creatives/month, website text edits up to 2 h, **no new landing pages**, extra work at $90/h. Four ads already delivered this month.
@@ -68,6 +81,7 @@ cd ~/agency/clients/acme-plumbing && claude
 | | **Free** (this repo) | **Starter** $29 | **Pro** $99 | **Agency** $249 |
 |---|:-:|:-:|:-:|:-:|
 | `client-workspace`, `scope-guard`, `offer-builder`, `cold-email-agency` | ✅ | ✅ | ✅ | ✅ |
+| `quick-quote` (pricing sanity check) | ✅ | free from this repo | free from this repo | free from this repo |
 | Client folder template | ✅ | ✅ | ✅ | ✅ |
 | `client-onboarding`, `proposal-sow`, `monthly-client-report` | — | ✅ | ✅ | ✅ |
 | Agency rules file | — | `CLAUDE-lite.md` | full `CLAUDE.md` + routing table | full `CLAUDE.md` + routing table |
@@ -78,7 +92,9 @@ cd ~/agency/clients/acme-plumbing && claude
 | Bonus skills | — | — | 2 (conversion copywriting, Meta ads playbook) | 13 (content engine, carousels, UGC scripts, Meta ads launch & metrics, landing pages, llms.txt, Supabase RLS, debugging, captions…) |
 | Agency kit: SOPs, SOW & change-order templates, 3 productized offers + pricing sheet, prospecting scripts, report template, 4 scheduled job runners | — | — | — | ✅ |
 | QUICKSTART guide | — | — | ✅ | ✅ |
-| **Total skills** | **4** | **7** | **16** | **27** |
+| **Total skills** | **5** | **7** (+ free repo) | **16** (+ free repo) | **27** (+ free repo) |
+
+Full pricing workflow (quote builder, paid diagnostic, retainer builder): **[AI Agency Pricing Kit](https://brianspark283.gumroad.com/l/ai-agency-pricing-kit?utm_source=github&utm_medium=readme)**, $39, works with any plan.
 
 All paid plans: 30-day money-back guarantee.
 
@@ -86,6 +102,7 @@ All paid plans: 30-day money-back guarantee.
 - 📥 **Free zip + updates by email:** https://brianspark283.gumroad.com/l/ai-agency-os-free?utm_source=github&utm_medium=readme
 - 🚀 **Starter — $29** (7 client-ops skills): https://brianspark283.gumroad.com/l/ai-agency-os-starter?utm_source=github&utm_medium=readme
 - Pro — $99: https://brianspark283.gumroad.com/l/ai-agency-os-pro?utm_source=github&utm_medium=readme · Agency — $249: https://brianspark283.gumroad.com/l/ai-agency-os-agency?utm_source=github&utm_medium=readme
+- 💲 **AI Agency Pricing Kit — $39** (quotes, paid diagnostics, retainers): https://brianspark283.gumroad.com/l/ai-agency-pricing-kit?utm_source=github&utm_medium=readme
 
 If this saved you an unbilled hour, a ⭐ helps others find it.
 

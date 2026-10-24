@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 — 2026-10-23
+- New free skill `quick-quote`: value-based price from 6 numbers, math shown, underquote check.
+- README: pricing section and link to the AI Agency Pricing Kit.
+
 ## 1.1.0 — 2026-10-23
 - New README with demo GIF, 30-second install and free vs paid comparison.
 - `scope-guard` rewritten as a complete procedure (inputs, classification, quoting, output format, rules).
