@@ -21,5 +21,8 @@
     "./skills/clients/",
     "./skills/sales/"
   ],
-  "icon": "./.claude-plugin/icon.png"
+  "icon": "./.claude-plugin/icon.png",
+  "displayName": "AI Agency OS Starter",
+  "documentationUrl": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter#readme",
+  "supportUrl": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter/issues"
 }
