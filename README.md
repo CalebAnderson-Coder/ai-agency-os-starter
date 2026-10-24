@@ -18,7 +18,23 @@ If you run an AI / marketing agency or freelance for several clients, Claude Cod
 
 AI Agency OS gives each client an isolated workspace (its own `CLAUDE.md`, voice, approved claims, scope and log) plus procedures that check every request against the contract.
 
-## Install in 30 seconds
+## Install
+Pick one. All three install the same five skills.
+
+**Claude Code plugin** (inside a Claude Code session):
+```
+/plugin marketplace add CalebAnderson-Coder/ai-agency-os-starter
+/plugin install ai-agency-os-starter@ai-agency-os
+```
+Plugin skills are namespaced, so you can call them as `/ai-agency-os-starter:scope-guard`, or just describe the task and Claude picks the skill.
+
+**skills CLI** (Claude Code, Codex, Cursor and other agents that read `SKILL.md`):
+```bash
+npx skills add CalebAnderson-Coder/ai-agency-os-starter
+```
+Add `--skill scope-guard` to install a single skill, or `--list` to see them first.
+
+**Clone + install script** (also copies the client folder template):
 ```bash
 git clone https://github.com/CalebAnderson-Coder/ai-agency-os-starter && cd ai-agency-os-starter
 ./install.sh ~/agency      # Windows: powershell -ExecutionPolicy Bypass -File .\install.ps1 -Target C:\agency
@@ -26,7 +42,7 @@ cd ~/agency && claude      # then type /skills
 ```
 Run `./install.sh` with no argument to install globally into `~/.claude`. Details: [INSTALL.md](INSTALL.md).
 
-Using **Codex** or another agent that reads `SKILL.md`? Copy the folders under `skills/*/` into that agent's skills directory — they are plain Markdown.
+The plugin and `npx skills` routes install the skills only. To get the client template and the worked example, clone the repo or copy [`templates/clients/_template/`](templates/clients/_template) by hand.
 
 ## What's in this repo (free)
 | Skill | What it does |

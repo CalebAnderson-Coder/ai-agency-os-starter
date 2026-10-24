@@ -4,6 +4,19 @@ Requirements: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) inst
 
 Claude Code loads skills from `~/.claude/skills/` (global) or `<project>/.claude/skills/` (per project), and agents from `.claude/agents/`.
 
+## Claude Code plugin
+In a Claude Code session:
+```
+/plugin marketplace add CalebAnderson-Coder/ai-agency-os-starter
+/plugin install ai-agency-os-starter@ai-agency-os
+```
+Or from your shell: `claude plugin marketplace add CalebAnderson-Coder/ai-agency-os-starter` then `claude plugin install ai-agency-os-starter@ai-agency-os`. Update later with `/plugin marketplace update ai-agency-os`.
+
+## skills CLI (any agent that reads SKILL.md)
+```bash
+npx skills add CalebAnderson-Coder/ai-agency-os-starter
+```
+
 ## macOS / Linux
 ```bash
 git clone https://github.com/CalebAnderson-Coder/ai-agency-os-starter && cd ai-agency-os-starter

@@ -1,0 +1,14 @@
+{
+  "name": "ai-agency-os-starter",
+  "version": "1.3.0",
+  "description": "Client-ops skills for agencies and freelancers: per-client workspaces, scope-creep checks against the SOW, value-based quotes, offers and cold email.",
+  "author": {
+    "name": "Brian Anderson",
+    "url": "https://github.com/CalebAnderson-Coder"
+  },
+  "homepage": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter",
+  "repository": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter",
+  "license": "MIT",
+  "keywords": ["agency", "freelance", "clients", "scope-creep", "pricing", "skills"],
+  "skills": ["./skills/clients/", "./skills/sales/"]
+}

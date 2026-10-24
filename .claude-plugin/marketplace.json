@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ai-agency-os",
+  "description": "Free client-ops skills for agencies and freelancers using Claude Code.",
+  "owner": {
+    "name": "Brian Anderson",
+    "url": "https://github.com/CalebAnderson-Coder"
+  },
+  "plugins": [
+    {
+      "name": "ai-agency-os-starter",
+      "source": "./",
+      "description": "Per-client workspaces, scope-guard (checks requests against SCOPE.md and drafts change orders), quick-quote, offer-builder and cold-email-agency.",
+      "category": "productivity",
+      "homepage": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter"
+    }
+  ]
+}

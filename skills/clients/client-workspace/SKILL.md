@@ -1,6 +1,6 @@
 ---
 name: client-workspace
-description: Create and maintain an isolated workspace per client: client CLAUDE.md with brand voice, rules, banned claims, contacts, access map, and logs. Use when adding a client, switching clients, or when Claude must "act as" a specific client.
+description: Create and maintain an isolated workspace per client, with a client CLAUDE.md holding brand voice, rules, banned claims, contacts, access map, and logs. Use when adding a client, switching clients, or when Claude must "act as" a specific client.
 ---
 
 # Client Workspace
