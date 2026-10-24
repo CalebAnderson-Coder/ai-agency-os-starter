@@ -24,5 +24,6 @@
   "icon": "./.claude-plugin/icon.png",
   "displayName": "AI Agency OS Starter",
   "documentationUrl": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter#readme",
-  "supportUrl": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter/issues"
+  "supportUrl": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter/issues",
+  "privacyPolicyUrl": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter/blob/main/PRIVACY.md"
 }
