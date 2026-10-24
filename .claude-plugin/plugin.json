@@ -9,6 +9,17 @@
   "homepage": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter",
   "repository": "https://github.com/CalebAnderson-Coder/ai-agency-os-starter",
   "license": "MIT",
-  "keywords": ["agency", "freelance", "clients", "scope-creep", "pricing", "skills"],
-  "skills": ["./skills/clients/", "./skills/sales/"]
+  "keywords": [
+    "agency",
+    "freelance",
+    "clients",
+    "scope-creep",
+    "pricing",
+    "skills"
+  ],
+  "skills": [
+    "./skills/clients/",
+    "./skills/sales/"
+  ],
+  "icon": "./.claude-plugin/icon.png"
 }
